@@ -8,6 +8,8 @@ Window {
     color: "black"
     title: qsTr("Dashboard")
 
+    readonly property real currentAspectRatio: (root.width / root.height)
+
     Component.onCompleted: {
         root.width = Style.screenWidth
         root.height = Style.screenHeight
